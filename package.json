@@ -1,0 +1,47 @@
+{
+	"name": "folder-snap",
+	"displayName": "FolderSnap",
+	"description": "Photo se VS Code mein folder structure banao",
+	"version": "0.0.3",
+	"publisher": "foldersnap",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/TERA_USERNAME/folder-snap-backend"
+	},
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "foldersnap.createStructure",
+				"title": "FolderSnap: Photo se Structure Banao"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./"
+	},
+	"devDependencies": {
+		"@types/node": "^18.0.0",
+		"@types/vscode": "^1.74.0",
+		"typescript": "^5.0.0"
+	},
+	"dependencies": {
+		"axios": "^1.15.0",
+		"form-data": "^4.0.5"
+	},
+	"icon": "icon.png",
+	"__metadata": {
+		"installedTimestamp": 1776054442373,
+		"targetPlatform": "undefined",
+		"size": 894922
+	}
+}
